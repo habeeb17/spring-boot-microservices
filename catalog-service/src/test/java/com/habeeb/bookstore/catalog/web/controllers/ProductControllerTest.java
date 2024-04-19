@@ -50,7 +50,7 @@ class ProductControllerTest extends AbstractIT {
         assertThat(product.price()).isEqualTo(new BigDecimal("34.0"));
     }
 
-    // @Test
+    @Test
     void shouldReturnNotFoundWhenProductCodeNotExists() {
         String code = "invalid_product_code";
         given().contentType(ContentType.JSON)
